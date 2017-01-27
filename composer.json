@@ -1,5 +1,5 @@
 {
-    "name": "minicodemonkey/amazon-alexa-php",
+    "name": "softxperience/amazon-alexa-php",
     "description": "Amazon Alexa interface for PHP",
     "license": "MIT",
     "type": "library",
@@ -7,6 +7,10 @@
         {
             "name": "Mathias Hansen",
             "email": "me@codemonkey.io"
+        },
+        {
+            "name": "Marcus Terasa",
+            "email": "info@softxperience.com"
         }
     ],
     "require": {
