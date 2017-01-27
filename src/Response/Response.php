@@ -16,11 +16,14 @@ class Response {
 	}
 
 	public function respond($text, $ssml = false) {
-		$this->outputSpeech = new OutputSpeech;
-		$this->outputSpeech->text = $text;
         if ($ssml) {
-            $this->outputSpeech->type = 'SSML';
+            $this->outputSpeech = new OutputSpeechSSML;
         }
+        else {
+            $this->outputSpeech = new OutputSpeech;
+        }
+
+		$this->outputSpeech->text = $text;
 
 		return $this;
 	}
